@@ -1,0 +1,7 @@
+Mirror in progress since Mon, 26 Mar 2018 12:01:16 .. please wait!
+winhttrack https://www.google.de -W -O "/home/benjamin/websites/google" -%v 
+To pause the engine: create an empty file named 'hts-stop.lock'
+PID=21200
+UID=1000
+GID=1000
+START=1522058476

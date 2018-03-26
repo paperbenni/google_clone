@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html class="google" lang="de">
+  
+<!-- Mirrored from www.google.de/intl/de/analytics/features/mobile-app-analytics.html?utm_source=Internal&utm_campaign=InPage&utm_medium=BusinessSolutions by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Mar 2018 10:07:01 GMT -->
+<head>
+
+    <script>
+(function(H){H.className=H.className.replace(/\bgoogle\b/,'google-js')})(document.documentElement)
+    </script>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+    <meta content=
+    "Erfassen Sie mobile Websites und Anwendungen sowie Besuche mit webfähigen Mobilgeräten, einschließlich High-End- und nicht JavaScript-fähiger Handys."
+    name="description">
+    <title>
+      Google Analytics: Analyseberichterstellung für mobilen Traffic – Google Analytics
+    </title>
+    <script src="http://www.google.com/js/google.js">
+</script>
+    <script src="http://www.google.com/js/suez/track.js">
+</script>
+    <script>
+(function(){window.suezTracker=new gweb.analytics.AutoTrack({trackQueryParams:true,cookiePath:"/analytics/",profile:"UA-10005-1"});window.suezSuperTracker=suezSuperTrack("UA-27343179-1")})();
+    </script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=de" rel=
+    "stylesheet">
+    <link href="../../../../analytics/css/default2.css" rel="stylesheet">
+    <script src="http://www.google.com/js/gweb/core.js">
+</script>
+    <script src="http://www.google.com/js/gweb/analytics/doubletrack.js">
+</script>
+    <script>
+window.ga = window.ga || function() {(ga.q = ga.q || []).push(arguments)};
+      (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = 'http://www.google-analytics.com/analytics.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+      ga('create', 'UA-38676921-4');
+      ga('send', 'pageview');
+    </script>
+    <link href="http://www.google.com/analytics/images/favicon.ico" rel="shortcut icon" type=
+    "image/x-icon">
+  </head>
+  <body>
+    <div class="maia-header" id="maia-header" role="banner">
+      <div class="maia-aux">
+        <h1>
+          <a href="../index.html"><img alt="Google" src=
+          "http://www.google.com/images/branding/googlelogo/1x/googlelogo_color_116x41dp.png">Analytics</a>
+        </h1>
+        <div class="maia-util">
+          <script>
+function $(elementId) {
+  return document.getElementById(elementId);
+}
+function searchQuery() {
+  window.location.href = '../../../de_ALL/analytics/search.html#q=' + $('q').value;
+}
+          </script>
+          <div class="maia-search search-top">
+            <input id="q" name="q" placeholder="Auf dieser Website suchen" type="text">
+            <input name="hl" type="hidden" value="de"> <button class="maia-button" id=
+            "cse-search-button" onclick="searchQuery()"><span class=
+            "maia-search-icon">Search</span></button>
+          </div>
+          <div id="maia-cta-mobile">
+            <div class="two-buttons">
+              <a class="secondary-button" href=
+              "https://www.google.com/accounts/ServiceLogin?service=analytics&amp;passive=true&amp;nui=1&amp;hl=de&amp;continue=https://www.google.com/analytics/web/%3Fhl%3Dde&amp;followup=https://www.google.com/analytics/web/%3Fhl%3Dde"
+              onclick=
+              "_gaq.push(['_setCustomVar', 6, 'SignIn', 'ExistingUser', '2']);_gaq.push(['_trackEvent', 'SignIn', 'Click', 'ExistingUser']);">
+              Anmelden</a> <span>oder</span> <a class="ga-button" href=
+              "https://www.google.com/accounts/ServiceLogin?service=analytics&amp;passive=true&amp;nui=1&amp;hl=de&amp;continue=https://www.google.com/analytics/web/%3Fhl%3Dde&amp;followup=https://www.google.com/analytics/web/%3Fhl%3Dde&amp;userexp=signup"
+              onclick=
+              "_gaq.push(['_setCustomVar', 7, 'CreateAccount', 'NewAccount','2']);_gaq.push(['_trackEvent', 'CreateAccount', 'OutboundClick', 'NewAccount']);">
+              Konto erstellen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="maia-nav maia-complex" id="maia-nav-x" role="navigation">
+      <div class="maia-aux">
+        <div class="two-buttons">
+          <a class="secondary-button" href=
+          "https://www.google.com/accounts/ServiceLogin?service=analytics&amp;passive=true&amp;nui=1&amp;hl=de&amp;continue=https://www.google.com/analytics/web/%3Fhl%3Dde&amp;followup=https://www.google.com/analytics/web/%3Fhl%3Dde"
+          onclick=
+          "_gaq.push(['_setCustomVar', 6, 'SignIn', 'ExistingUser', '2']);_gaq.push(['_trackEvent', 'SignIn', 'Click', 'ExistingUser']);">
+          Anmelden</a> <span>oder</span> <a class="ga-button" href=
+          "https://www.google.com/accounts/ServiceLogin?service=analytics&amp;passive=true&amp;nui=1&amp;hl=de&amp;continue=https://www.google.com/analytics/web/%3Fhl%3Dde&amp;followup=https://www.google.com/analytics/web/%3Fhl%3Dde&amp;userexp=signup"
+          onclick=
+          "_gaq.push(['_setCustomVar', 7, 'CreateAccount', 'NewAccount','2']);_gaq.push(['_trackEvent', 'CreateAccount', 'OutboundClick', 'NewAccount']);">
+          Konto erstellen</a>
+        </div>
+        <ul>
+          <li class="">
+            <a href="../../../de_ALL/analytics/index.html">Startseite</a>
+          </li>
+          <li class="active">
+            <a href="../../../de_ALL/analytics/features/index.html" onclick=
+            "_gaq.push(['_trackEvent', 'TopNavFeatures', 'Click', 'Features']);">Funktionen</a>
+            <ul>
+              <li class="">
+                <a href="../../../de_ALL/analytics/features/analysis-tools.html" onclick=
+                "_gaq.push(['_trackEvent', 'Features', 'Click', 'AnalysisTools']);">Analyse-Tools</a>
+              </li>
+              <li class="">
+                <a href="../../../de_ALL/analytics/features/content.html" onclick=
+                "_gaq.push(['_trackEvent', 'Features', 'Click', 'Content']);">Content</a>
+              </li>
+              <li class="active">
+                <a href="../../../de_ALL/analytics/features/mobile.html" onclick=
+                "_gaq.push(['_trackEvent', 'Features', 'Click', 'Mobile']);">Mobil</a>
+              </li>
+              <li class="">
+                <a href="../../../de_ALL/analytics/features/conversion-suite.html" onclick=
+                "_gaq.push(['_trackEvent', 'Features', 'Click', 'Conversion']);">Conversion</a>
+              </li>
+              <li class="">
+                <a href="../../../de_ALL/analytics/features/social.html" onclick=
+                "_gaq.push(['_trackEvent', 'Features', 'Click', 'Social']);">Soziale Medien</a>
+              </li>
+              <li class="">
+                <a href="../../../de_ALL/analytics/features/advertising.html" onclick=
+                "_gaq.push(['_trackEvent', 'Features', 'Click', 'Advertising']);">Werbung</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="../../../de_ALL/analytics/learn/index.html" onclick=
+            "_gaq.push(['_trackEvent', 'TopNavLearn', 'Click', 'Learn']);">Ressourcen</a>
+          </li>
+          <li class="">
+            <a href="https://www.google.com/analytics/partners" onclick=
+            "_gaq.push(['_trackEvent', 'TopNavPartners', 'Click', 'Partners']);">Partner</a>
+          </li>
+          <li class="">
+            <a href="../../../de_ALL/analytics/support/index.html" onclick=
+            "_gaq.push(['_trackEvent', 'TopNavHelp', 'Click', 'Help']);">Hilfe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="maia-main" role="main">
+      <div class="maia-nav" id="maia-nav-y" role="navigation">
+        <ul>
+          <li>
+            <a href="../../../de_ALL/analytics/features/mobile.html">Übersicht</a>
+          </li>
+          <li class="active">
+            <a href="../../../de_ALL/analytics/features/mobile-app-analytics.html">Analytics für
+            mobile Apps</a>
+          </li>
+          <li>
+            <a href="../../../de_ALL/analytics/features/mobile-site-traffic.html">Traffic für mobile
+            Websites</a>
+          </li>
+        </ul>
+      </div>
+      <div class="maia-article" role="article">
+        <div class="suez-cols">
+          <div class="maia-aside feature-banner">
+            <div class="suez-cols">
+              <div class="suez-col-4">
+                <h1 class="analysis-tools">
+                  Analytics für mobile Apps
+                </h1>
+                <p>
+                  Wir haben Analytics für Apps ganz neu konzipiert und auf Ihre Bedürfnisse
+                  abgestimmt. Damit können Sie nun noch erfolgreichere Android- und iOS-Apps
+                  entwickeln und die Nutzererfahrung verbessern, indem Sie Messwerte für alle
+                  Phasen ermitteln: Akquisition, Interesse und Resultate, beispielsweise
+                  In-App-Käufe. Diese Plattform bietet Ihnen die umfassenden Funktionen, die Sie
+                  bereits von Google Analytics gewohnt sind. Dazu zählen Echtzeit-Berichte,
+                  zahlreiche Möglichkeiten der Segmentierung, mehr als 200 Dimensionen sowie das
+                  Erfassen von benutzerdefinierten Dimensionen und Messwerten.
+                </p>
+              </div>
+              <div class="suez-col-5">
+                <img alt="" src="../images/feat-hed-curve.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="suez-cols feature-content">
+          <div class="suez-col-3">
+            <p>
+              <img alt="Mobilgerät" src="../images/row-img-aquisition.png">
+            </p>
+          </div>
+          <div class="suez-col-7">
+            <h3>
+              "Akquisition" und "Besucherübersicht" – mit diesen Berichten erkennen Sie, woher die
+              Besucher kommen
+            </h3>
+            <p>
+              Wenn Sie Ihren Kundenstamm durch die richtigen Nutzer erweitern möchten, sollten Sie
+              wissen, woher die Nutzer Ihrer App kommen. Mit unseren Berichten können Sie sich
+              einen Überblick über die Akquise verschaffen, einschließlich der Kosten und des
+              Besucherflusses. Die Berichte "Neue Nutzer" und "Aktive Nutzer" zeigen, von wie
+              vielen Nutzern Ihre App täglich gestartet wird. Im Bericht "Google Play-Quellen"
+              erfahren Sie, über welche Quelle die meisten neuen Nutzer zu Ihrer App gelangen. Die
+              Berichte "In-App-Conversion" und "Geräte" bieten Informationen darüber, welche
+              Mobilgeräte am häufigsten verwendet werden und unter welchen Betriebssystemversionen
+              Ihre App ausgeführt wird.
+            </p>
+            <p>
+              <a href=
+              "http://support.google.com/analytics/bin/answer.py?hl=de&amp;answer=2568794">Weitere
+              Informationen</a>
+            </p>
+          </div>
+        </div>
+        <div class="suez-cols feature-content">
+          <div class="suez-col-3">
+            <p>
+              <img alt="" src="../images/row-img-engagement.png">
+            </p>
+          </div>
+          <div class="suez-col-7">
+            <h3>
+              "Interesse" – diese Berichte zeigen, wie Nutzer mit Ihrer App interagieren
+            </h3>
+            <p>
+              Das Interesse ist bei Apps das wichtigste Kriterium. Wenn Nutzer Ihre App
+              installieren und nur einmal starten, sind Ihre Umsatzmöglichkeiten natürlich sehr
+              begrenzt. Mit den Berichten "Interesse" erfahren Sie mehr über die Attraktivität
+              Ihrer App und das Verhalten Ihrer Nutzer. Unser spezielles Ereignis-Tracking-System
+              ermöglicht Ihnen, alle wichtigen Ereignisse zu verfolgen. Über den Interessenfluss
+              können Sie visualisieren, wie Nutzer sich durch Ihre App bewegen, also welche
+              Bildschirme angezeigt und welche Aktionen ausgeführt werden. Die Berichte "Verhalten"
+              bieten Informationen zu Treue, Häufigkeit der Besuche und Interesse. Anhand der
+              Berichte "Abstürze und Ausnahmen" können Sie Probleme mit Geräten und
+              Betriebssystemen beheben. Sie können Trends dazu ermitteln, in welchen Fällen eine
+              App nicht reibungslos funktioniert. Das ist entscheidend für eine positive
+              Nutzererfahrung.
+            </p>
+            <p>
+              <a href=
+              "http://support.google.com/analytics/bin/answer.py?hl=de&amp;answer=2568878">Weitere
+              Informationen</a>
+            </p>
+          </div>
+        </div>
+        <div class="suez-cols feature-content">
+          <div class="suez-col-3">
+            <p>
+              <img alt="" src="../images/row-img-cart.png">
+            </p>
+          </div>
+          <div class="suez-col-7">
+            <h3>
+              "Resultate"/"E-Commerce" – anhand dieser Berichte lässt sich feststellen, ob Nutzer
+              die Ziele erreichen
+            </h3>
+            <p>
+              Ziele sind für Ihre Apps genauso wichtig wie für Ihre Websites. Mit Ziel-Conversions
+              können Sie Conversion-Ereignisse in Ihrer App einrichten, beispielsweise die in einer
+              App verbrachte Zeit, In-App-Käufe, Klicks auf Anzeigen usw., um den Erfolg messen und
+              den Lifetime-Wert Ihrer Nutzer einschätzen zu können. Mit unserem E-Commerce-System
+              können Sie In-App-Käufe tracken und wichtige Einblicke in den Verkauf virtueller oder
+              materieller Güter über Ihre App gewinnen. Sie können ermitteln, wie viele Käufe
+              getätigt und welche Umsätze generiert wurden.
+            </p>
+            <p>
+              <a href=
+              "http://support.google.com/analytics/bin/answer.py?hl=de&amp;answer=2568802">Weitere
+              Informationen</a>
+            </p>
+          </div>
+        </div>
+        <div class="suez-cols feature-content">
+          <div class="suez-col-10">
+            <h3>
+              Erste Schritte
+            </h3>
+            <p>
+              Der neue Bericht "Analytics für mobile Apps" umfasst viele andere wichtige
+              Funktionen, die Nutzer von Google Analytics bereits kennen. Dazu zählen "Echtzeit",
+              "Dashboards", "Erweiterte Segmente", "Benutzerdefinierte Berichte",
+              "App-Geschwindigkeit" <a href=
+              "http://support.google.com/analytics/bin/answer.py?hl=de&amp;answer=2568871">und
+              andere</a>.
+            </p>
+            <p>
+              Die Berichte ermöglichen einen ganzheitlichen Ansatz, wenn es darum geht, die
+              Leistung mobiler Apps zu messen. Mit dem SDK 2.0 ist eine schlankere Version
+              verfügbar, die leichter zu implementieren und sofort einsatzfähig ist. Darüber hinaus
+              wurde die Infrastruktur im Backend optimiert. Außerdem wurde der Anmeldeprozess
+              umgestaltet. Neue Nutzer können wählen, ob sie die Leistung Ihrer Website oder Ihrer
+              App messen möchten. Sie sind nur drei Klicks davon entfernt, Ihr Analytics-Konto für
+              mobile Apps einzurichten und <a href=
+              "http://developers.google.com/analytics/devguides/collection/">das SDK
+              herunterzuladen</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="maia-signature"></div>
+    <div class="maia-footer" id="maia-footer">
+      <div id="maia-footer-local">
+        <div class="maia-aux">
+          <div id="suez-footer-site">
+            <div class="suez-cols local-footer">
+              <div class="suez-col-3">
+                <p>
+                  Google Analytics-Website teilen<script src="http://apis.google.com/js/plusone.js">
+{
+      lang: 'de',
+      parsetags: 'explicit'
+    }
+                  </script> <span class="plusone-button" id=
+                  "plusone-httpwwwgooglecomanalytics"></span> <script>
+(function() {
+    var href = 'https://www.google.com/analytics' ||
+               window['location']['protocol'] + '//' +
+               window['location']['host'] + window['location']['pathname'];
+
+    gapi['plusone']['render']('plusone-httpwwwgooglecomanalytics', {
+      'count': 'false',
+      'href': href,
+      'size': 'small',
+      'callback': ''
+    });
+  }());
+                  </script>
+                </p>
+              </div>
+              <div class="suez-col-4">
+                <p>
+                  Folgen Sie Google Analytics auf <a href="https://analytics.blogspot.com/"><img alt=
+                  "Blogger" src="http://www.google.com/images/icons/product/blogger-16.png"></a>
+                  <a href="https://www.youtube.com/googleanalytics?hl=de"><img alt="YouTube" src=
+                  "http://www.google.com/images/icons/product/youtube-16.png"></a> <a href=
+                  "https://feeds.feedburner.com/blogspot/tRaA"><img alt="" src=
+                  "http://www.google.com/images/icons/feature/rss-o16.png"></a> <a href=
+                  "http://plus.google.com/u/0/111224383669619377607/posts"><img alt="" src=
+                  "http://www.google.com/images/icons/product/gplus-16.png"></a><a class="icn-lst" href=
+                  "http://twitter.com/googleanalytics"><img alt="Twitter" src=
+                  "http://www.google.com/apps/images/core/icons/twitter.png"></a>
+                </p>
+              </div>
+              <div class="suez-col-5">
+                <div class="policy">
+                  <p>
+                    <a href="https://www.google.com/analytics/terms/de.html" target=
+                    "_blank">Nutzungsbedingungen</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="suez-footer-univ">
+            <a href="../../services/sitemap.html">Sie möchten Ihr Unternehmenswachstum steigern?
+            Wir können Ihnen dabei helfen.</a>
+          </div>
+        </div>
+      </div><script src="../js/sitemap.min.js">
+</script><script src="http://www.google.com/js/suez/base.js">
+</script>
+      <div id="maia-footer-global">
+        <div class="maia-aux">
+          <div class="maia-locales">
+            <select onchange=
+            "var href=this[this.selectedIndex].value;if(href!=''){window.location.href=href};">
+              <option value="/intl/ar/analytics/">
+                العربية
+              </option>
+              <option value="/intl/bg/analytics/">
+                Български
+              </option>
+              <option value="/intl/ca/analytics/">
+                Català
+              </option>
+              <option value="/intl/cs/analytics/">
+                Čeština
+              </option>
+              <option value="/intl/da/analytics/">
+                Dansk
+              </option>
+              <option selected value="/intl/de/analytics/">
+                Deutsch
+              </option>
+              <option value="/intl/en_uk/analytics/">
+                UK English
+              </option>
+              <option value="/analytics/">
+                US English
+              </option>
+              <option value="/intl/el/analytics/">
+                Ελληνικά
+              </option>
+              <option value="/intl/es/analytics/">
+                Español
+              </option>
+              <option value="/intl/fi/analytics/">
+                Suomi
+              </option>
+              <option value="/intl/fil/analytics/">
+                Filipino
+              </option>
+              <option value="/intl/fr/analytics/">
+                Français
+              </option>
+              <option value="/intl/hi/analytics/">
+                हिंदी
+              </option>
+              <option value="/intl/hr/analytics/">
+                Hrvatski
+              </option>
+              <option value="/intl/hu/analytics/">
+                Magyar
+              </option>
+              <option value="/intl/id/analytics/">
+                Bahasa Indonesia
+              </option>
+              <option value="/intl/iw/analytics/">
+                עברית
+              </option>
+              <option value="/intl/it/analytics/">
+                Italiano
+              </option>
+              <option value="/intl/ja/analytics/">
+                日本語
+              </option>
+              <option value="/intl/ko/analytics/">
+                한국어
+              </option>
+              <option value="/intl/lt/analytics/">
+                Lietuvių
+              </option>
+              <option value="/intl/lv/analytics/">
+                Latviešu valoda
+              </option>
+              <option value="/intl/nl/analytics/">
+                Nederlands
+              </option>
+              <option value="/intl/no/analytics/">
+                Norsk
+              </option>
+              <option value="/intl/pl/analytics/">
+                Polski
+              </option>
+              <option value="/intl/pt-BR/analytics/">
+                Português (Brasil)
+              </option>
+              <option value="/intl/pt-PT/analytics/">
+                Português (Portugal)
+              </option>
+              <option value="/intl/ro/analytics/">
+                Română
+              </option>
+              <option value="/intl/ru/analytics/">
+                Русский
+              </option>
+              <option value="/intl/sk/analytics/">
+                Slovenský
+              </option>
+              <option value="/intl/sl/analytics/">
+                Slovenščina
+              </option>
+              <option value="/intl/sr/analytics/">
+                Српски
+              </option>
+              <option value="/intl/sv/analytics/">
+                Svenska
+              </option>
+              <option value="/intl/th/analytics/">
+                ไทย
+              </option>
+              <option value="/intl/tr/analytics/">
+                Türkçe
+              </option>
+              <option value="/intl/uk/analytics/">
+                Українська
+              </option>
+              <option value="/intl/vi/analytics/">
+                Tiếng Việt
+              </option>
+              <option value="/intl/zh-CN/analytics/">
+                中文 (简体)
+              </option>
+              <option value="/intl/zh-TW/analytics/">
+                中文 (繁體)
+              </option>
+            </select>
+          </div>
+          <ul>
+            <li>
+              <a href="../../../../index.html">Google</a>
+            </li>
+            <li>
+              <a href="../../about/index.html">Über Google</a>
+            </li>
+            <li>
+              <a href="../../policies/index.html">Datenschutzerklärung &amp; Nutzungsbedingungen</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><script src="http://www.google.com/js/maia.js">
+</script>
+  </body>
+
+<!-- Mirrored from www.google.de/intl/de/analytics/features/mobile-app-analytics.html?utm_source=Internal&utm_campaign=InPage&utm_medium=BusinessSolutions by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Mar 2018 10:07:06 GMT -->
+</html>
